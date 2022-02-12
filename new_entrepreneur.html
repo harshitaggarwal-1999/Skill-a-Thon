@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+   
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="flex-slider.css">
+
+    
+    <title>Entrepreneur Registration</title>
+</head>
+
+<body>
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+          <a href="#"><em>SIGN UP!</em></a>
+        </div>
+        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="main-nav" role="navigation">
+          <ul class="main-menu">
+            <li><a href="#section1">Home</a></li>
+            
+            <li><a href="#section6">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+    <h1 style="
+    margin-left: 50px;
+    border-top-width: 2px;
+    margin-top: 100px;">Register as an Entrepreneur Today! </h1>
+    <form action="/entrepreneurs" method="POST">
+        <input type="text" name="name" id="name" placeholder="Enter full name" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <input type="number" name="phone" id="phone" placeholder="Enter mobile number" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <input type="email" name="email" id="email" placeholder="Enter email address" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <input type="password" name="password" id="password" placeholder="Enter password" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <input type="text" name="venture_name" id="venture_name" placeholder="Enter the name of your venture/product" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <input type="text" name="leader_name" id="leader_name" placeholder="Enter the team leader's full name" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+            <h6 style="
+            margin-left: 50px;
+            margin-top: 10px;
+            margin-bottom: 0px;">Brief Idea Overview :</h6> <br />
+        <textarea rows="5" cols="50" name="idea_overview" style="margin-left: 50px;
+        ">
+        Enter a brief description of your business idea
+        </textarea><br />
+        <input type="number" name="funding_reqd" id="funding_reqd" placeholder="Enter in rupees the funding required by your organisation" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;
+        margin-bottom: 10px;"><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">Enter a category for your venture</h6>
+        <br />
+        <select name="dropdown" style="margin-left: 50px;">
+            <option value="science and technology" selected>Science and Technology</option>
+            <option value="arts">Arts</option>
+            <option value="social entrepreneurship">Social Entrepreneurship</option>
+            <option value="women empowerment">Women Empowerment</option>
+            <option value="education">Education</option>
+            <option value="health sector">Health and Wellness</option>
+            <option value="safety">Safety</option>
+        </select><br />
+        <input type="date" name="startdate" id="startdate" placeholder="Enter the starting date of your venture"  style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <input type="number" name="employee_count" id="employee_count" placeholder="Enter the current no. of employees in your venture" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <input type="text" name="working_location" id="working_location" placeholder="Enter your working location" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;
+        margin-bottom: 10px;"><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">Is your project currently in the ideation phase?</h6>
+        <br />
+        <input type="radio" name="idea_phase" id="idea_phase" value="yes" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 5px;">Yes<br />
+        <input type="radio" name="idea_phase" id="idea_phase" value="no" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;">No<br />
+
+        <input type="number" name="annual_turnover" id="annual_turnover" placeholder="Enter the current annual turnover (in rupees) of your venture" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;
+        margin-bottom: 10px;"><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">Are you also a job provider?</h6>
+        <br />
+        <input type="radio" name="job_provider" id="job_provider" value="yes" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 5px;">Yes<br />
+        <input type="radio" name="job_provider" id="job_provider" value="no" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;">No<br />
+        <div class="col-md-12">
+            <fieldset>
+              <button type="submit" id="form-submit" class="button" style="margin-top: 10px;
+              margin-left: 35px;
+              margin-top: 50px;
+              background-color: #f5a425;
+              color: #fff;
+              font-size: 13px;
+              text-transform: uppercase;
+              letter-spacing: 0.5px;
+              font-weight: 700;
+              padding: 12px 20px;
+              display: inline-block;
+              outline: none;
+              box-shadow: none;
+              border: none;">Submit</button>
+            </fieldset>
+          </div>
+     
+    </form>
+
+</body>
+
+</html>

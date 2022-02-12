@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Vriddhi- Upskill and Upscale/InterviewTips</title>
+    
+   
+    
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Interview preparation tips</em> </a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Home</a></li>
+        
+        </li>
+        <li><a href="#section6">Sign Out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <style>
+  
+  
+    body, html {
+      height: 100%;
+      margin: 0;
+      
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    
+    .bg-text {
+            color:black;
+      
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: left;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="bg-image"></div>
+    
+    <div class="bg-text">
+      <ul style="list-style-type:disc;margin-left: 60px;margin-top: 90px;margin-right: 70px;">
+        <li style="font-size: 18px;"><b>
+            Research the industry and company. </b>
+            <p style="font-size: 15px;">
+                An interviewer may ask how you perceive his company's position in its industry, who the firm's competitors are, what its competitive advantages are, and how it should best go forward
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Clarify your "selling points" and the reasons you want the job.</b>
+            <p>
+                Prepare to go into every interview with three to five key selling points in mind, such as what makes you the best candidate for the position.
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Anticipate the interviewer's concerns and reservations.</b>
+            <p>
+                There are always more candidates for positions than there are openings. So interviewers look for ways to screen people out. Put yourself in their shoes and ask yourself why they might not want to hire you
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Line up your questions for the interviewer.</b>
+            <p>
+                Come to the interview with some intelligent questions for the interviewer that demonstrate your knowledge of the company as well as your serious intent. 
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Get on the same side as the interviewer.</b> 
+        <p>
+            Many interviewers view job interviews as adversarial: Candidates are going to try to pry an offer out of the interviewer, and the interviewer's job is to hold onto it. Your job is to transform this "tug of war" into a relationship in which you're both on the same side. 
+        </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Think positive. </b>
+            <p>
+                No one likes a complainer, so don't dwell on negative experiences during an interview.
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Close on a positive note.</b>
+            <p>
+                Tell the interviewer that you'd really, really like the job – that you were excited about it before the interview and are even more excited now, and that you're convinced you'd like to work there. If there are two equally good candidates at the end of the search – you and someone else – the interviewer will think you're more likely to accept the offer, and thus may be more inclined to make an offer to you.
+            </p>
+        </li>
+        </ul>
+    </ul>
+      
+    </div>
+
+  <div class="col-md-12">  
+
+  </div>
+
+
+  
+        
+ 
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+</html>

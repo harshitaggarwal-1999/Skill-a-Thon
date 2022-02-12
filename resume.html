@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Skillathon</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Resume making tips</em> </a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Home</a></li>
+        
+        </li>
+        <li><a href="#section6">Sign out<a></li>
+      </ul>
+    </nav>
+  </header>
+  <style>
+  img {
+    filter: opacity(80%);
+  }
+  
+    body, html {
+      height: 100%;
+      margin: 0;
+      
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-image {
+      /* The image used */
+      background-image: url("C:/Users/mmsac/Downloads/resume_red_flags.jpg");
+      
+      /* Add the blur effect */
+      filter: opacity(30%);
+      
+      
+      /* Full height */
+      height: 100%; 
+      
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    /* Position text in the middle of the page/image */
+    .bg-text {
+            color:black;
+      
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: left;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="bg-image"></div>
+    
+    <div class="bg-text">
+      <ul style="list-style-type:disc;margin-left: 60px;margin-top: 90px;margin-right: 70px;">
+        <li style="font-size: 18px;"><b>
+            Consider using a professionally designed template. </b>
+            <p style="font-size: 15px;">
+                Resume templates can save you a lot of time and effort. Imagine not having to fool around with margins in Word. Pick a modern resume template out, and you’re ready to go. 
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Balance your text and white space. </b>
+            <p>
+                All best-looking resumes need to be skimmable and clean. Balancing your text and white space is the same thing as adding margins. It makes your resume aesthetically pleasing and easy to read. Do not sacrifice white space in the name of fitting everything onto one page. There are other ways.
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Tailor your resume to the job description. </b>
+            <p>
+                Tailoring your resume is probably the king of resume tips. If you do nothing else, tailor your resume to the job description. You do that by identifying keyword skills in the offer and then add these skills throughout your resume. It sounds like a lot of work, but these keywords are what you should put on your resume above all else. That’s because keywords are what hiring managers are looking for when they scan your resume. 
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Add numbers and details wherever possible.</b>
+            <p>
+                Adding numbers and details to emphasize skills is by far one of the best resume tips you can follow. Anytime you can illustrate an achievement or skill with numbers or details - do it. 
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Include a resume summary or objective.</b> 
+        <p>
+            Include a resume summary or a resume objective. It’s three sentences of who you are, where you’re going, and why you’ll bring value to the company.
+        </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Consider adding a Hobbies and Interest section to your resume. </b>
+            <p>
+                If you have space, hobbies and interests can be great additions to your resume. That’s because companies are beginning to emphasize work culture. Which makes finding a candidate with a  fitting personality increasingly important.
+            </p>
+        </li>
+        </ul>
+    </ul>
+      
+    </div>
+
+  <div class="col-md-12">  
+
+  </div>
+<div class="col-md-6">
+  <img width="600" height="450" frameborder="0" style="border:0" src="C:\Users\mmsac\Downloads\how_to_write_a_resume_banner.png" alt="">
+</div>
+
+  
+        
+ 
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+</html>

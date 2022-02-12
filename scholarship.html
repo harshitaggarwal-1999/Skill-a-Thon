@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Vriddhi- Upskill and Upscale/InterviewTips</title>
+    
+   
+    
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Interview preparation tips</em> </a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Home</a></li>
+        
+        </li>
+        <li><a href="#section6">Sign Out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <style>
+  
+  
+    body, html {
+      height: 100%;
+      margin: 0;
+      
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    
+    .bg-text {
+            color:black;
+      
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: left;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="bg-image"></div>
+    
+    <div class="bg-text">
+      <ul style="list-style-type:disc;margin-left: 60px;margin-top: 90px;margin-right: 70px;">
+        <li style="font-size: 18px;"><b>
+            Amazon Women In Innovation Bursary</b>
+            <p style="font-size: 15px;">
+                Amazon’s Women in Innovation Bursary aims to help empower more women from less-advantaged backgrounds with the education they need to enter the tech industry. Recipients can get up to £30,000 per year to fund their studies and will be provided with mentoring from an Amazon staff-member.
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Adobe Research Women-in-Technology Scholarship</b>
+            <p>
+                Adobe is a major name in software, and their Adobe Research Women-in-Technology Scholarship is available to female students based anywhere across the globe. It offers a single payment towards tuition fees, a Creative Cloud subscription membership for 12 months, an Adobe Research mentor and a chance to interview for an Adobe internship.
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Sky Women in Technology</b>
+            <p>
+                Sky launched its Women in Technology Scholars grant in 2017. This provides three women between ages 18-25 with the funding and mentoring to create a bespoke tech project.
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Women Techmakers Scholars Program</b>
+            <p>
+                Originally known as the Google Anita Borg Memorial Scholarship Program, the Women Techmakers Scholars Program is open to women from Europe, North America, the Middle-East, Africa and Asia Pacific. Scholarships are awarded based on women’s academic performance and include invitations to the large Women Techmakers Scholars’ Retreat 
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            University of Birmingham Scholarships in Computer Science</b> 
+        <p>
+            The University of Birmingham School of Computer Science provides scholarships for undergraduates and postgraduates for EU and international women.
+        </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Booking.com Women in Technology </b>
+            <p>
+                Booking.com, one of the biggest online travel businesses in the world, offers the new Booking.com Women in Technology Scholarships. This initiative lasts two years and aims to provide the support women interested in technology-focused employment need.
+            </p>
+        </li>
+        <li style="font-size: 18px;"><b>
+            Science Ambassador Scholarship</b>
+            <p>
+                Science Ambassador Scholarship is funded by Cards Against Humanity. This is a full-tuition scholarship for any women studying science, tech, engineering or math, and it is available for non-US citizens, too.
+            </p>
+        </li>
+        </ul>
+    </ul>
+      
+    </div>
+
+  <div class="col-md-12">  
+
+  </div>
+
+
+  
+        
+ 
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+</html>

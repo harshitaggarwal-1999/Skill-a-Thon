@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <title>All Users</title>
+    
+</head>
+
+<body>
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+          <a href="#"><em>Provider profiles</em></a>
+        </div>
+        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="main-nav" role="navigation">
+          <ul class="main-menu">
+            <li><a href="#section1">Home</a></li>
+            
+            <li><a href="#section6">Sign Out</a></li>
+          </ul>
+        </nav>
+      </header>
+    <h1 style="
+    margin-left: 50px;
+    border-top-width: 2px;
+    margin-top: 100px;">Please enter all the profiles available in your organisation!</h1>
+    <form action="/job_provider_profiles" method="POST">
+        <div class="form-group">
+        <input type="text" name="org_name" id="org_name" placeholder="Enter organisation name" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br/>
+        <input type="text" name="job_profile" id="job_profile" placeholder="Enter job_profile" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br/>
+        <input type="number" name="vacancies" id="vacancies" placeholder="Enter the number of vacancies" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <input type="number" name="profile_compensation" id="profile_compensation" placeholder="Enter the profile compensation" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <input type="text" name="profile_location" id="profile_location" placeholder="Enter the profile location" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+ 
+        <input type="text" name="brief_overview_of_profile" id="brief_overview_of_profile" placeholder="Enter the brief overview of profile" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+         <h6 style="
+         margin-left: 50px;
+         margin-top: 10px;
+         margin-bottom: 0px;">  Should the candidate be 10th pass? </h6> 
+        <br/>
+        <input type="number" name="req_tenth" id="req_tenth" placeholder="Enter 0 for no and 1 for yes" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Should the candidate be 12th pass? </h6> 
+        <br/>
+        <input type="number" name="req_twelfth" id="req_twelfth" placeholder="Enter 0 for no and 1 for yes" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Entire the required graduation degree(if any) </h6> 
+        <br />
+        <select name="dropdown" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;">
+            <option value="B. Tech" selected>B. Tech</option>
+            <option value="BBA">BBA</option>
+            <option value="B. Sc">B. Sc</option>
+            <option value="MBBS">M.B.B.S.</option>
+            <option value="B. Com">B. Com</option>
+            <option value="B. Arch">B. Arch</option>
+            <option value="other">Others</option>
+            <option value="none">None</option>
+        </select><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Entire the required post graduation degree(if any) </h6> 
+        <br />
+        <select name="dropdown" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;">
+            <option value="M. Tech" selected>M. Tech</option>
+            <option value="MBA">MBA</option>
+            <option value="M. Sc">M. Sc</option>
+            <option value="MD">M.D.</option>
+            <option value="M. Com">M. Com</option>
+            <option value="M. Arch">M. Arch</option>
+            <option value="other">Others</option>
+            <option value="none">None</option>
+        </select><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Entire the required badge(if any) </h6>
+        <br/>  
+        
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Gold Badges : </h6><br />
+        <select name="dropdown" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;">
+            <option value="Embroidery" selected>Embroidery</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Accounts">Accounts</option>
+            <option value="Finance">Finance</option>
+            <option value="other">Others</option>
+            <option value="none">None</option>
+        </select><br />
+
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Silver Badges : </h6><br />
+        <select name="dropdown" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;">
+            <option value="Embroidery" selected>Embroidery</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Accounts">Accounts</option>
+            <option value="Finance">Finance</option>
+            <option value="other">Others</option>
+            <option value="none">None</option>
+        </select><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Bronze Badges : </h6>
+    <br />
+        <select name="dropdown" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;">
+            <option value="Embroidery" selected>Embroidery</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Accounts">Accounts</option>
+            <option value="Finance">Finance</option>
+            <option value="other">Others</option>
+            <option value="none">None</option>
+        </select><br />
+
+        <div class="col-md-12">
+            <fieldset>
+              <button type="submit" id="form-submit" class="button" style="margin-top: 10px;
+              margin-left: 35px;
+              margin-top: 50px;
+              background-color: #f5a425;
+              color: #fff;
+              font-size: 13px;
+              text-transform: uppercase;
+              letter-spacing: 0.5px;
+              font-weight: 700;
+              padding: 12px 20px;
+              display: inline-block;
+              outline: none;
+              box-shadow: none;
+              border: none;">Submit</button>
+            </fieldset>
+          </div>
+        </div>
+    </form>
+
+</body>
+</html>

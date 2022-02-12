@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+   
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    
+    <title>Job Seeker Registration</title>
+    
+</head>
+
+<body>
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+          <a href="#"><em>SIGN UP!</em></a>
+        </div>
+        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="main-nav" role="navigation">
+          <ul class="main-menu">
+            <li><a href="#section1">Home</a></li>
+            
+            <li><a href="#section6">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1 style="
+    margin-left: 50px;
+    border-top-width: 2px;
+    margin-top: 100px;">Register as a Job Seeker Today! </h1>
+    
+    <form action="/seekers" method="POST">
+        <div class="form-group">
+        <input type="text" name="name" id="name" placeholder="Enter full name" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br/>
+        <input type="number" name="phone" id="phone" placeholder="Enter mobile number" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <input type="email" name="email" id="email" placeholder="Enter email address" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <input type="password" name="password" id="password" placeholder="Enter password" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 10px;"><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;"> Have you completed 10th standard?</h6>
+       <br/>
+        <input type="radio" name="tenth" id="tenth" value="yes" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 5px;">Yes<br />
+        <input type="radio" name="tenth" id="tenth" value="no" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 5px;">No<br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;"> If yes, specify your school</h6><br />
+        <input type="text" name="tenth_org" id="tenth_org" placeholder="Enter class 10th organisation name" style="margin-left: 50px;"><br />
+
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;"> Have you completed 12th standard?</h6><br />
+        <input type="radio" name="twelfth" id="twelfth" value="yes" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 5px;">Yes<br />
+        <input type="radio" name="twelfth" id="twelfth" value="no" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 5px;">No<br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;"> If yes, please specify school</h6><br />
+        <input type="text" name="twelfth_org" id="twelfth_org" placeholder="Enter class 12th organisation name" style="margin-left: 50px;"><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;"> Have you completed graduation?</h6>
+        <br />
+        <input type="radio" name="grad" id="grad" value="yes" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 5px;">Yes<br />
+        <input type="radio" name="grad" id="grad" value="no" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 5px;">No<br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;"> If yes, please specify school and qualification</h6><br />
+        <input type="text" name="graduation_org" id="graduation_org" placeholder="Enter graduation organisation name" style="margin-left: 50px;"><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Enter graduation qualification</h6>
+       <br />
+        <select name="dropdown" style="margin-left: 50px;">
+            <option value="B. Tech" selected>B. Tech</option>
+            <option value="BBA">BBA</option>
+            <option value="B. Sc">B. Sc</option>
+            <option value="MBBS">M.B.B.S.</option>
+            <option value="B. Com">B. Com</option>
+            <option value="B. Arch">B. Arch</option>
+            <option value="other">Others</option>
+        </select><br />
+
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Have you completed post graduation</h6><br />
+        <input type="radio" name="postgrad" id="postgrad" value="yes"  style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 5px;">Yes<br />
+        <input type="radio" name="postgrad" id="postgrad" value="no" style="
+        margin-left: 50px;
+        border-top-width: 2px;
+        margin-top: 5px;">No<br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  If yes, specify your school and qualification</h6>
+        <br />
+        <input type="text" name="post-graduation_org" id="post-graduation_org" placeholder="Enter post-graduation organisation name" style="margin-left: 50px;"><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Enter post-graduation qualification</h6>
+        <br />
+        <select name="dropdown" style="margin-left: 50px;">
+            <option value="M. Tech" selected>M. Tech</option>
+            <option value="MBA">MBA</option>
+            <option value="M. Sc">M. Sc</option>
+            <option value="MD">M.D.</option>
+            <option value="M. Com">M. Com</option>
+            <option value="M. Arch">M. Arch</option>
+            <option value="other">Others</option>
+        </select><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Gold badges : </h6>
+        <br />
+        <textarea rows="5" cols="50" name="gold_badge" style="margin-left: 50px;">
+            Enter the names of your gold badges here...
+        </textarea><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Silver badges : </h6>
+         <br />
+        <textarea rows="5" cols="50" name="silver_badge" style="margin-left: 50px;">
+            Enter the names of your silver badges here...
+        </textarea><br />
+        <h6 style="
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 0px;">  Bronze badges : </h6>
+        <br />
+        <textarea rows="5" cols="50" name="bronze_badge" style="margin-left: 50px;">
+            Enter the names of your bronze badges here...
+        </textarea><br />
+        
+        <div class="col-md-12">
+            <fieldset>
+              <button type="submit" id="form-submit" class="button" style="margin-top: 10px;
+              margin-left: 35px;
+              margin-top: 50px;
+              background-color: #f5a425;
+              color: #fff;
+              font-size: 13px;
+              text-transform: uppercase;
+              letter-spacing: 0.5px;
+              font-weight: 700;
+              padding: 12px 20px;
+              display: inline-block;
+              outline: none;
+              box-shadow: none;
+              border: none;">Submit</button>
+            </fieldset>
+          </div>
+          </div>
+    </form>
+    
+</body>
+
+</html>
